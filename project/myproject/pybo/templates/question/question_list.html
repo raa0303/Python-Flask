@@ -10,13 +10,14 @@
             </tr>
         </thead>
         <tbody>
-           { % if question_list %}
+           {% if question_list %}
            {% for question in question_list %}
            <tr>
-            <td>{{ loop.index}}</td>
+            <td>{{ loop.index }}</td>
             <td>
-                <a href="{{ url_for('question.detail', question_id=question.id)}}">{{ question.subject }}</a>
+                <a href="{{ url_for('question.detail', question_id=question.id) }}">{{ question.subject }}</a>
             </td>
+            <td>{{ question.create_date }}</td>
            </tr>
            {% endfor %}
            {% else %}
@@ -26,5 +27,6 @@
            {% endif %}
         </tbody>
     </table>
+    <a href="{{ url_for('question.create') }}" class="btn btn-primary">질문 등록하기</a>
 </div>
 {% endblock %}
