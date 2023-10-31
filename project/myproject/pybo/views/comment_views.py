@@ -32,7 +32,7 @@ def modify_question(comment_id):
     if request.method == 'POST':
         form = CommentForm()
         if form.validate_on_submit():
-            form.polulate_obj(comment)
+            form.populate_obj(comment)
             comment.modify_date = datetime.now()
             db.session.commit()
             return redirect(url_for('question.detail', question_id=comment.question.id))
