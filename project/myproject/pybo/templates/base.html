@@ -20,5 +20,18 @@
         <script src="{{ url_for('static', filename='jquery-3.7.1.min.js') }}"></script>
         <!-- Bootstrap JS-->
         <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+        <!-- 자바스크립트 시작 -->
+        {% block script %}
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".delete").on('click', function() {
+                    if(confirm("정말로 삭제하시겠습니까?")){
+                        location.href = $(this).data('uri');
+                    }
+                });
+            });
+        </script>
+        {% endblock %}
+        <!-- 자바스크립트 끝 -->
     </body>
 </html>
