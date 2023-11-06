@@ -15,7 +15,6 @@ naming_convention = {
 db = SQLAlchemy(metadata=MetaData(naming_convention=naming_convention))
 migrate = Migrate()
 
-
 def create_app():
     app = Flask(__name__)
     app.config.from_object(config)
@@ -37,6 +36,7 @@ def create_app():
     app.register_blueprint(auth_views.bp)
     app.register_blueprint(comment_views.bp)
     app.register_blueprint(vote_views.bp)
+    
 
     # 필터
     from .filter import format_datetime
