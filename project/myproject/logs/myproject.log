@@ -1,0 +1,48 @@
+[2023-11-14 23:26:56,304] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-11-14 23:26:56,304] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2023-11-14 23:27:05,760] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/raa/Desktop/Python-Flask/myproject/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/raa/Desktop/Python-Flask/myproject/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/raa/Desktop/Python-Flask/myproject/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/raa/Desktop/Python-Flask/myproject/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/raa/Desktop/Python-Flask/project/myproject/pybo/views/main_views.py", line 12, in index
+    3/0
+ZeroDivisionError: division by zero
+[2023-11-14 23:27:05,762] INFO in _internal: 127.0.0.1 - - [14/Nov/2023 23:27:05] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2023-11-14 23:27:07,041] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/raa/Desktop/Python-Flask/myproject/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/raa/Desktop/Python-Flask/myproject/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/raa/Desktop/Python-Flask/myproject/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/raa/Desktop/Python-Flask/myproject/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/raa/Desktop/Python-Flask/project/myproject/pybo/views/main_views.py", line 12, in index
+    3/0
+ZeroDivisionError: division by zero
+[2023-11-14 23:27:07,042] INFO in _internal: 127.0.0.1 - - [14/Nov/2023 23:27:07] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2023-11-14 23:27:08,715] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/raa/Desktop/Python-Flask/myproject/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/raa/Desktop/Python-Flask/myproject/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/raa/Desktop/Python-Flask/myproject/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/raa/Desktop/Python-Flask/myproject/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/raa/Desktop/Python-Flask/project/myproject/pybo/views/main_views.py", line 12, in index
+    3/0
+ZeroDivisionError: division by zero
+[2023-11-14 23:27:08,716] INFO in _internal: 127.0.0.1 - - [14/Nov/2023 23:27:08] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2023-11-14 23:28:32,435] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-11-14 23:28:32,435] INFO in _internal: [33mPress CTRL+C to quit[0m
